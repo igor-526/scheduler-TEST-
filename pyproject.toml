@@ -1,0 +1,23 @@
+[project]
+name = "scheduler"
+version = "0.1.0"
+description = "Library for shedule management"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.3.1",
+    "requests>=2.32.4",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.3.0",
+    "flake8-import-order>=0.19.2",
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
+    "pytest-responsemock>=1.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
