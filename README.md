@@ -18,7 +18,7 @@
 </div>
 
 <div id="view_counter" align="center">
-  <img src="https://komarev.com/ghpvc/?username=igor-526&color=blue&style=for-the-badge&label=ПРОСМОТРЫ ПРОФИЛЯ"/>
+  <img src="https://komarev.com/ghpvc/?username=igor-526&color=blue&style=for-the-badge&label=ПРОСМОТРЫ"/>
 </div>
 
 # 🕒 Schedule Manager
@@ -54,18 +54,18 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### 2. ⎇ Клонирование проекта
 ```bash
-git clone https://github.com/igor-526/scheduler-TEST-.git
+git clone https://github.com/igor-526/scheduler-TEST-.git scheduler
 ```
 
 ### 3. 🏗️ Настройка окружения
 ```bash
-cd scheduler-TEST-
+cd scheduler
 uv sync
 .venv\Scripts\activate    # для Windows
 source myenv/bin/activate # для MacOS или Linux
 ```
 
-### ⚙️ 3. Настройки (/src/settings.py)
+### ⚙️ 3. Настройки (scheduler/src/settings.py)
 ```ini
 DEFAULT_API_URL     # API Endpoint для получения расписания по умолчанию
 DATE_PATTERN        # Паттерн для валидации строки даты
